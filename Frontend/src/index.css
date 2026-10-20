@@ -1,6 +1,17 @@
+:root {
+  --menuColour: #e1dcc9;
+  --bg: #121519;
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: custom;
+
+}
+
+@font-face {
+  font-family: custom;
+  src: url("../../assets/CaviarDreams.ttf");
 }
 
 html {
@@ -12,6 +23,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
 }
+
 h1 {
   font-size: 5.6rem;
 }

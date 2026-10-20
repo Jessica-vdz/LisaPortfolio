@@ -1,0 +1,41 @@
+
+@font-face {
+    font-family: custom;
+    src: url(./assets/CaviarDreams.ttf);
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    display: flex;
+    padding: 1rem;
+    align-items: flex-start;
+    width: fit-content;
+    background-color: #e1dcc9;
+    border-radius: 1rem;
+}
+
+.navbarContent {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+
+.navbarItem {
+    text-decoration: none;
+    color: #000;
+    transition: .5s ease-in-out;
+}
+
+header {
+    height: 100vh;
+    background-color: #121519;
+    overflow: hidden;
+    color: #fff;
+    font-family: custom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
