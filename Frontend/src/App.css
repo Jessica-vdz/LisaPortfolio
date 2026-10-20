@@ -12,7 +12,7 @@
     padding: 1rem;
     align-items: flex-start;
     width: fit-content;
-    background-color: #e1dcc9;
+    background-color: #b6b2a3;
     border-radius: 1rem;
 }
 
@@ -29,6 +29,9 @@
     transition: .5s ease-in-out;
 }
 
+.navbarItem:hover {
+    color: #fff;
+}
 header {
     height: 100vh;
     background-color: #121519;
