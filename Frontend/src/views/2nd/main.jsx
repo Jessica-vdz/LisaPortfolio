@@ -59,49 +59,76 @@ export function SecondView() {
         )
     }
 
-    function Projects() {
+    function Project3D() {
         const containerRef = useRef(null);
-        const {events} = useScrollOnDrag(containerRef);
+        const { events } = useScrollOnDrag(containerRef);
         return (
             <section className={styles.project} id="3dProjects">
                 <h2 className={styles.projectHeader}>3D Projecten</h2>
                 <article className={styles.projectCaroussel} {...events} ref={containerRef}>
-                        {drie.map(item => (
-                            <figure className={styles.projectCard} key={item.id} >
-                                <div className={styles.projectDesc}>
-                                    <h3>{item.name}</h3>
-                                    <button>Lees Verder</button>
-                                </div>
-                            </figure>
+                    {drie.map(item => (
+                        <figure className={styles.projectCard} key={item.id} >
+                            <div className={styles.projectDesc}>
+                                <h3>{item.name}</h3>
+                                <button>Lees Verder</button>
+                            </div>
+                        </figure>
 
-                        ))}
+                    ))}
                 </article>
             </section>
         )
     }
 
     function Painting() {
+
+        const containerRef = useRef(null);
+        const { events } = useScrollOnDrag(containerRef);
         return (
             <section className={styles.painting} id='schilderijen'>
-                <article>
-                    {painting.map(item => {
-                        <figure key={item.id}>
-                            <div>
+                <article className={styles.paintingCaroussel}  {...events} ref={containerRef}>
+                    {painting.map(item => (
+                        <figure key={item.id} className={styles.paintingCard}>
+                            <div className={styles.paintingDesc}>
                                 <h3>{item.name}</h3>
                                 <button>Read More</button>
                             </div>
                         </figure>
 
-                    })}
+                    ))}
                 </article>
                 <h2>Schilderijen</h2>
             </section>
         )
     }
+
+        function Project2D() {
+        const containerRef = useRef(null);
+        const { events } = useScrollOnDrag(containerRef);
+        return (
+            <section className={styles.project} id="2dProjects">
+                <h2 className={styles.projectHeader}>2D Projecten</h2>
+                <article className={styles.projectCaroussel} {...events} ref={containerRef}>
+                    {twee.map(item => (
+                        <figure className={styles.projectCard} key={item.id} >
+                            <div className={styles.projectDesc}>
+                                <h3>{item.name}</h3>
+                                <button>Lees Verder</button>
+                            </div>
+                        </figure>
+
+                    ))}
+                </article>
+            </section>
+        )
+    }
+
     return (
         <section className={styles.sectionTwo}>
             <Aboutme />
-            <Projects />
+            <Project3D />
+            <Painting />
+            <Project2D/>
         </section>
     )
 }

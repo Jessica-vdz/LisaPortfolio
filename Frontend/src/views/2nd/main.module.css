@@ -1,14 +1,10 @@
-.sectionTwo {
-    height: 100vh;
-    background-color: aqua;
-}
-
 .aboutme {
     height: calc(100vh / 3);    
     background-color: #e1dcc9;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    box-shadow: 0 -.1rem 5rem #414040 inset;
 }
 
 .portret {
@@ -35,7 +31,6 @@
     padding: 1rem;
 }
 
-
 .projectCaroussel {
     width: 90%;
     height: calc(100vh / 2);
@@ -57,6 +52,7 @@
     overflow: hidden;
     border-radius: 1.2rem;
 }
+
 .projectDesc {
     position: absolute;
     bottom: 0;
@@ -86,6 +82,73 @@
 }
 
 .projectCard:hover .projectDesc {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.painting {
+    height: calc(100vh / 3);
+    background-color: #c6c3b9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 -.1rem 5rem #414040 inset;
+
+}
+
+
+.paintingCaroussel {
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    scrollbar-color: #1f1f1f  #e1dcc9;
+    scrollbar-width: thin;
+}
+
+.paintingCard {
+    min-width: 40rem;
+    height: 100%;
+    background-color: #e1dcc9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.2rem;
+}
+
+.paintingDesc {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+
+    background-color: #1f1f1fba;
+    color: #e1e1e1;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+
+    border-radius: 1.2rem 1.2rem 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+
+    padding: 1rem;
+}
+
+.paintingCard:hover .paintingDesc {
     opacity: 1;
     transform: translateY(0);
 }

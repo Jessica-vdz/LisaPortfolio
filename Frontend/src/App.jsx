@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { Home } from './views/home/home'
 import { SecondView } from './views/2nd/main'
+import { End } from './views/footer/footer';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,8 +32,8 @@ function App() {
           <a href="#aboutMe" className="navbarItem">About Me</a>
           <a href="#3dProjects" className="navbarItem">3D Art</a>
           <a href="#schilderijen" className="navbarItem">Schilderijen</a>
-          <a href="#" className="navbarItem">2D Art</a>
-          <a href="#" className="navbarItem">Contact</a>
+          <a href="#2dProjects" className="navbarItem">2D Art</a>
+          <a href="#contact" className="navbarItem">Contact</a>
         </div>
       )
     }
@@ -47,6 +48,9 @@ function App() {
       <main>
         <SecondView />
       </main>
+      <footer  id='contact'>
+        <End/>
+      </footer>
     </>
   )
 }

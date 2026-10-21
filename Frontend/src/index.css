@@ -7,7 +7,7 @@
   padding: 0;
   font-family: custom;
     box-sizing: border-box;
-
+    scrollbar-color: #1f1f1f  #e1dcc9;
 }
 
 @font-face {
