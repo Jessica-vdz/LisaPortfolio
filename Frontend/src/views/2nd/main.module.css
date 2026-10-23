@@ -4,7 +4,6 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    box-shadow: 0 -.1rem 5rem #414040 inset;
 }
 
 .portret {
@@ -33,7 +32,7 @@
 
 .projectCaroussel {
     width: 90%;
-    height: calc(100vh / 2);
+    height: 80%;
     padding: 10px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -45,14 +44,17 @@
 }
 
 .projectCard {
-    min-width: 50rem;
     height: 100%;
+    min-width: fit-content;
     background-color: #e1dcc9;
     position: relative;
     overflow: hidden;
     border-radius: 1.2rem;
 }
+.img {
+    height: 100%;
 
+}
 .projectDesc {
     position: absolute;
     bottom: 0;
@@ -62,7 +64,7 @@
     height: 100%;
     box-sizing: border-box;
 
-    background-color: #1f1f1fba;
+    background-color: #1f1f1fe1;
     color: #e1e1e1;
 
     opacity: 0;
@@ -88,14 +90,12 @@
 
 .painting {
     height: calc(100vh / 3);
-    background-color: #c6c3b9;
+    background-color: #e1dcc9;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0 -.1rem 5rem #414040 inset;
-
 }
 
 
@@ -113,7 +113,7 @@
 }
 
 .paintingCard {
-    min-width: 40rem;
+    min-width: fit-content;
     height: 100%;
     background-color: #e1dcc9;
     position: relative;
@@ -139,7 +139,6 @@
         opacity 0.5s ease;
 
     border-radius: 1.2rem 1.2rem 0 0;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -152,3 +151,4 @@
     opacity: 1;
     transform: translateY(0);
 }
+

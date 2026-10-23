@@ -2,7 +2,8 @@ CREATE TABLE 3D (
     id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     name VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
-    link VARCHAR(255) NOT NULL,
+    link VARCHAR(255),
+    programmas VARCHAR(255),
     img VARCHAR(255) NOT NULL
 );
 
