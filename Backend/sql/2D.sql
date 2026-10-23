@@ -1,4 +1,4 @@
-INSERT INTO 2D (name, description, link, img) VALUES ('Cats with plants.', 'test description', 'test link', 'cats');
+INSERT INTO 2D (name, description, link, img) VALUES ('Cats with plants.', 'test description', 'test link', 'cat');
 INSERT INTO 2D (name, description, link, img) VALUES ('Viking.', 'Dit was een art challange', 'test link', 'viking');
 INSERT INTO 2D (name, description, link, img) VALUES ('dog.', 'test description', 'test link', 'dog');
 INSERT INTO 2D (name, description, link, img) VALUES ('Freckled girl.', 'test description', 'test link', 'girl');

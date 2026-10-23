@@ -56,7 +56,7 @@ export function SecondView() {
     const [project, setProject] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost/api/load3D.php")
+        fetch("/php/api/load3D.php")
             .then(res => res.json())
             .then(data => {
                 setDrie(data);
@@ -67,7 +67,7 @@ export function SecondView() {
     }, [])
 
     useEffect(() => {
-        fetch("http://localhost/api/load2D.php")
+        fetch("/php/api/load2D.php")
             .then(res => res.json())
             .then(data => {
                 setTwee(data)
@@ -78,7 +78,7 @@ export function SecondView() {
     }, [])
 
     useEffect(() => {
-        fetch("http://localhost/api/loadPainting.php")
+        fetch("/php/api/loadPainting.php")
             .then(res => res.json())
             .then(data => {
                 setPainting(data)

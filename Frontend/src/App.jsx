@@ -3,6 +3,7 @@ import './App.css'
 import { Home } from './views/home/home'
 import { SecondView } from './views/2nd/main'
 import { End } from './views/footer/footer';
+import { Menu, X } from 'lucide-react';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,9 @@ function App() {
     return (
       <nav className="navbar">
         <HamburgerMenu />
-        <button onClick={() => openMenu()} className="navbarButton">Open</button>
+        <button onClick={() => openMenu()} className="navbarButton">
+          {menuOpen ? <X/> : <Menu/>}
+        </button>
       </nav>
     )
   }
@@ -48,8 +51,8 @@ function App() {
       <main>
         <SecondView />
       </main>
-      <footer  id='contact'>
-        <End/>
+      <footer id='contact'>
+        <End />
       </footer>
     </>
   )
